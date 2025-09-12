@@ -21,7 +21,6 @@ public abstract class ElementoMultimediale implements Play {
 
     }
 
-    ;
 
     public void show(String titolo) {
     }
