@@ -3,14 +3,17 @@ package Entities;
 
 import Interfaces.Play;
 
-public abstract class ElementoMultimediale implements Play {
+
+public abstract class ElementoMultimediale implements Play, {
     // attributi
-    private int durata;
+    protected String titolo;
+    protected int durata;
 
 
     //costruttori
     public ElementoMultimediale() {
         this.durata = durata;
+        this.titolo = titolo;
     }
     //metodi
 

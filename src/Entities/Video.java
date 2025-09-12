@@ -57,7 +57,7 @@ public class Video extends ElementoMultimediale {
         int lum = 0;
 
         for (lum = 0; lum <= this.luminosita; lum++) {
-            System.out.println("Il la luminosita' e' al " + this.luminosita + "x");
+            System.out.println("Il la luminosita' e' al " + this.luminosita + "*");
         }
 
         for (result = 0; result <= this.volume; result++) {
@@ -66,6 +66,8 @@ public class Video extends ElementoMultimediale {
 
 
         }
-        ;
+
+        System.out.println(" il video in riproduzione e'" + " " + this.titolo + " " + "dalla durata di " + durata);
+
     }
 }

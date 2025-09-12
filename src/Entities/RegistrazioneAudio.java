@@ -41,5 +41,6 @@ public class RegistrazioneAudio extends ElementoMultimediale {
             System.out.println("Il volume e' al " + this.volume + "!");
 
         }
+        System.out.println(" la traccia in riproduzione e'" + " " + this.titolo + " " + "dalla durata di " + durata);
     }
 }

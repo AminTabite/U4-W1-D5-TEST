@@ -1,5 +1,5 @@
 package Interfaces;
 
 public interface Show {
-    public void show();
+    public void Show();
 }
