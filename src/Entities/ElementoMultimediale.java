@@ -4,7 +4,7 @@ package Entities;
 import Interfaces.Play;
 
 
-public abstract class ElementoMultimediale implements Play, {
+public abstract class ElementoMultimediale implements Play {
     // attributi
     protected String titolo;
     protected int durata;
