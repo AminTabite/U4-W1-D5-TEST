@@ -6,8 +6,9 @@ public class RegistrazioneAudio extends ElementoMultimediale {
     private int volume;
 
     // costruttore
-    public RegistrazioneAudio(int durata, int volume) {
+    public RegistrazioneAudio(int durata, String titolo) {
         super();
+        this.titolo = titolo;
         this.volume = 5;
 
 

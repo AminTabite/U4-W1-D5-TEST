@@ -6,10 +6,12 @@ public class Video extends ElementoMultimediale {
     private int volume;
 
     // costruttori
-    public Video(int volume, int luminosita) {
+    public Video(int durata, String Titolo) {
         super();
         this.volume = 5;
         this.luminosita = 3;
+        this.durata = durata;
+        this.titolo = titolo;
     }
 
     //metodi

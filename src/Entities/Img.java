@@ -7,9 +7,10 @@ public class Img extends ElementoMultimediale {
     private int luminosita;
 
     // costruttori
-    public Img(int luminosita) {
+    public Img(String titolo) {
         super();
         this.luminosita = 3;
+        this.titolo = titolo;
 
     }
 
@@ -52,7 +53,7 @@ public class Img extends ElementoMultimediale {
 
     @Override
     public void Play() {
-
     }
+
 
 }

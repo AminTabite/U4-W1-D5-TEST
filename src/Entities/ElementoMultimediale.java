@@ -23,7 +23,7 @@ public abstract class ElementoMultimediale implements Play {
 
     ;
 
-    public void show() {
+    public void show(String titolo) {
     }
 
     ;
