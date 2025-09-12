@@ -12,7 +12,16 @@ public class Main {
 
         System.out.println("Ciao, cerca dei file inserendo durata e titolo");
         for (int i = 0; i <= Lettoremultimediale.length; i++) {
-                
+            System.out.println("inserire durata");
+            int durata = scanner.nextInt();
+
+            System.out.println("inserire titolo");
+            String titolo = scanner.nextLine();
+
+
+            Lettoremultimediale[i] = new ElementoMultimediale(titolo,durata);
+            }
+
         }
 
 
