@@ -20,7 +20,7 @@ public class RegistrazioneAudio extends ElementoMultimediale {
         if (volume == 10) {
             System.out.println("Volume massimo raggiunto" + " " + volume);
         }
-        return volume++;
+        return volume;
     }
 
 
@@ -29,9 +29,17 @@ public class RegistrazioneAudio extends ElementoMultimediale {
         if (volume == 0) {
             System.out.println("il volume e' muto" + " " + volume);
         }
-        return volume--;
+        return volume;
     }
 
-    ;;
 
+    @Override
+    public void Play() {
+        int result = 0;
+        for (result = 0; result <= this.volume; result++) {
+
+            System.out.println("Il volume e' al " + this.volume + "!");
+
+        }
+    }
 }

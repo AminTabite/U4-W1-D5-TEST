@@ -1,8 +1,12 @@
 package Entities;
 
-public class ElementoMultimediale {
+
+import Interfaces.Play;
+
+public abstract class ElementoMultimediale implements Play {
     // attributi
     private int durata;
+
 
     //costruttori
     public ElementoMultimediale() {
@@ -13,4 +17,11 @@ public class ElementoMultimediale {
     public void play() {
 
     }
+
+    ;
+
+    public void show() {
+    }
+
+    ;
 }
