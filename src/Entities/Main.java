@@ -13,7 +13,34 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ciao, scegli un numero da 1 a 5 per riprodurre un elemento multimediale");
+        ElementoMultimediale[] Lettoremultimediale = new ElementoMultimediale [5];
+        Lettoremultimediale[0] = Song1;
+        Lettoremultimediale[1] = Song1;
+        Lettoremultimediale[2] = gattojpg;
+        Lettoremultimediale[3] = BionicleLore;
+        Lettoremultimediale[4] = movie;
+
+    };
+
+
+
+
+        while(true) {
+            System.out.println("Ciao, scegli un numero da 1 a 5 per riprodurre un elemento multimediale");
+
+            int n = scanner.nextInt();
+
+
+
+
+            if (n ==0) {
+                
+            break;}
+            }
+
+        }
 
     }
+
+
 }
