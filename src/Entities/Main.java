@@ -21,7 +21,7 @@ public class Main {
         //  System.out.println("Ciao, cerca dei file inserendo durata e titolo");
         for (int i = 0; i < Lettoremultimediale.length; i++) {
 
-            System.out.println("Ciao, cosa vuoi riprodurre? 1= file img  2= file mp3 3= file mp4 ");
+            System.out.println("Ciao, aggiungi elementi da riprodurre 1= file img  2= file mp3 3= file mp4 ");
             int scelta = scanner.nextInt();
 
             switch (scelta) {
@@ -69,12 +69,17 @@ public class Main {
 
             }
 
+
+        }
+
+        while (true) {
+
             System.out.println("quale elemento vuoi riprodurre? scegli un numero da 1 a 5, 0 per finire");
             int sceltaelemento = Integer.parseInt(scanner.nextLine());
-
-            if (sceltaelemento == 1) { Lettoremultimediale[0].show();}
-            if (sceltaelemento == 2) {Lettoremultimediale[1].
-
+            int indice = sceltaelemento - 1;
+            if (indice >= 0 && indice < Lettoremultimediale.length) {
+                Lettoremultimediale[indice].play();
+            }
         }
     }
 }

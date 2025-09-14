@@ -38,8 +38,8 @@ public class Img extends ElementoMultimediale {
     }
 
 
-    public void Show() {
-
+    @Override
+    public void Play() {
         int lum = 0;
         String titolo = this.titolo;
 
@@ -48,11 +48,6 @@ public class Img extends ElementoMultimediale {
 
         }
         System.out.println("il titolo dell' img e' " + titolo);
-    }
-
-
-    @Override
-    public void Play() {
     }
 
 
