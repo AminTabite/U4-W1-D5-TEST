@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Main {
 
-  //  RegistrazioneAudio Song1 = new RegistrazioneAudio(4, "We will rock you");
-   // RegistrazioneAudio Song2 = new RegistrazioneAudio(4, "Preparation ");
+    //  RegistrazioneAudio Song1 = new RegistrazioneAudio(4, "We will rock you");
+    // RegistrazioneAudio Song2 = new RegistrazioneAudio(4, "Preparation ");
     //Img gattojpg = new Img("gattojpg");
     //Video BionicleLore = new Video(10, "bioniclePirakastory");
     //Video movie = new Video(90, "Halloween");
@@ -15,26 +15,63 @@ public class Main {
 
         ElementoMultimediale[] Lettoremultimediale = new ElementoMultimediale[5];
 
-
-        System.out.println("Ciao, cerca dei file inserendo durata e titolo");
-        for (int i = 0; i <= Lettoremultimediale.length; i++) {
-
-         System.out.println("vuoi aprire un Img, un video o una RegistrazioneAudio");
-          String ElementoMultimediale = scanner.nextLine();
-
-         System.out.println("inserire durata");
-        int durata = scanner.nextInt();
-
-        System.out.println("inserire titolo");
-        String titolo = scanner.nextLine();
+        //   System.out.println("Ciao, cosa vuoi riprodurre? 1= file img  2= file mp3 3= file mp4");
 
 
+        //  System.out.println("Ciao, cerca dei file inserendo durata e titolo");
+        for (int i = 0; i < Lettoremultimediale.length; i++) {
+
+            System.out.println("Ciao, cosa vuoi riprodurre? 1= file img  2= file mp3 3= file mp4 ");
+            int scelta = scanner.nextInt();
+
+            switch (scelta) {
+                case 1 -> {
+                    System.out.println("inserire titolo img");
+                    String titolo = scanner.nextLine();
+
+                    scanner.nextLine();
+
+                    Lettoremultimediale[i] = new Img(titolo);
+
+                    break;
+                }
+                case 2 -> {
+                    System.out.println("inserire titolo mp3");
+                    String titolo = scanner.nextLine();
+
+                    scanner.nextLine();
+
+                    System.out.println("inserire durata brano");
+                    int durata = Integer.parseInt(scanner.nextLine());
+
+                    Lettoremultimediale[i] = new RegistrazioneAudio(titolo, durata);
+                    break;
+                }
+                
+                case 3 -> {
+                    System.out.println("inserisci titolo mp4");
+                    String titolo = scanner.nextLine();
+
+                    scanner.nextLine();
+
+                    System.out.println("inserisci durata video");
+                    int durata = Integer.parseInt(scanner.nextLine());
+
+                    scanner.nextLine();
+
+                    Lettoremultimediale[i] = new Video(titolo, durata);
+                    break;
+                }
+                case 4 -> {
+                    break;
+                }
+
+
+            }
+
+
+        }
     }
-
-    // ho creato oggetti manualmente per vedere se funzionano le classi.
-
-
 }
-
 
 

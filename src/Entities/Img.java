@@ -7,8 +7,8 @@ public class Img extends ElementoMultimediale {
     private int luminosita;
 
     // costruttori
-    public Img(String titolo, int durata, int luminosita) {
-        super(titolo, durata);
+    public Img(String titolo) {
+        super(titolo);
         this.luminosita = 3;
         this.titolo = titolo;
 
