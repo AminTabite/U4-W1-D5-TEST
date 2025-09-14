@@ -79,6 +79,78 @@ public class Main {
             int indice = sceltaelemento - 1;
             if (indice >= 0 && indice < Lettoremultimediale.length) {
                 Lettoremultimediale[indice].play();
+
+                while (true) {
+                    System.out.println("1, 2 per gestire volume, 3,4 per gestire la luminosita', 0 per uscire");
+                    int sceltaminimenu = Integer.parseInt(scanner.nextLine());
+                    if (sceltaminimenu == 0) break;
+
+
+                    switch (sceltaminimenu) {
+
+                        case 1 -> {
+                            if (Lettoremultimediale[indice] instanceof Video) {
+
+                                ((Video) Lettoremultimediale[indice]).volumeUp();
+                            } else if (Lettoremultimediale[indice] instanceof RegistrazioneAudio) {
+                                ((RegistrazioneAudio) Lettoremultimediale[indice]).volumeUp();
+                            } else {
+                                System.out.println("non e' possibile eseguire quest'operazione sul file scelto ");
+                            }
+
+                        }
+                        case 2 -> {
+                            if (Lettoremultimediale[indice] instanceof Video) {
+
+                                ((Video) Lettoremultimediale[indice]).volumeDown();
+
+
+                            } else if (Lettoremultimediale[indice] instanceof RegistrazioneAudio) {
+
+                                ((RegistrazioneAudio) Lettoremultimediale[indice]).volumeDown();
+                            } else {
+                                System.out.println("non e' possibile eseguire quest'operazione sul file scelto ");
+                            }
+                        }
+
+                        case 3 -> {
+
+                            if (Lettoremultimediale[indice] instanceof Video) {
+
+                                ((Video) Lettoremultimediale[indice]).aumentaLuminosita();
+
+                            } else if (Lettoremultimediale[indice] instanceof Img) {
+                                ((Img) Lettoremultimediale[indice]).aumentaLuminosita();
+
+                            } else if (Lettoremultimediale[indice] instanceof RegistrazioneAudio) {
+
+                                System.out.println("non e' possibile eseguire quest'operazione sul file scelto ");
+                            }
+
+
+                        }
+                        case 4 -> {
+
+                            if (Lettoremultimediale[indice] instanceof Video) {
+                                ((Video) Lettoremultimediale[indice]).diminuireLuminosita();
+
+                            } else if (Lettoremultimediale[indice] instanceof Img) {
+                                ((Img) Lettoremultimediale[indice]).diminuireLuminosita();
+
+                            } else if (Lettoremultimediale[indice] instanceof RegistrazioneAudio) {
+                                System.out.println("non e' possibile eseguire quest'operazione sul file scelto ");
+                            }
+                        }
+
+
+                        default -> {
+                            break;
+                        }
+
+
+                    }
+                }
+
             }
         }
     }
