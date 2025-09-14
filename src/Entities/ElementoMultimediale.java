@@ -11,7 +11,7 @@ public abstract class ElementoMultimediale implements Play {
 
 
     //costruttori
-    public ElementoMultimediale() {
+    public ElementoMultimediale(String titolo, int durata) {
         this.durata = durata;
         this.titolo = titolo;
     }
