@@ -47,7 +47,7 @@ public class Main {
                     Lettoremultimediale[i] = new RegistrazioneAudio(titolo, durata);
                     break;
                 }
-                
+
                 case 3 -> {
                     System.out.println("inserisci titolo mp4");
                     String titolo = scanner.nextLine();
@@ -62,13 +62,18 @@ public class Main {
                     Lettoremultimediale[i] = new Video(titolo, durata);
                     break;
                 }
-                case 4 -> {
+                default -> {
                     break;
                 }
 
 
             }
 
+            System.out.println("quale elemento vuoi riprodurre? scegli un numero da 1 a 5, 0 per finire");
+            int sceltaelemento = Integer.parseInt(scanner.nextLine());
+
+            if (sceltaelemento == 1) { Lettoremultimediale[0].show();}
+            if (sceltaelemento == 2) {Lettoremultimediale[1].
 
         }
     }
