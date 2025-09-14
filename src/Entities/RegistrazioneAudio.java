@@ -36,7 +36,7 @@ public class RegistrazioneAudio extends ElementoMultimediale {
 
 
     @Override
-    public void Play() {
+    public void play() {
         int result = 0;
         for (result = 0; result <= this.volume; result++) {
 

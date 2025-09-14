@@ -55,7 +55,7 @@ public class Video extends ElementoMultimediale {
 
 
     @Override
-    public void Play() {
+    public void play() {
         int result = 0;
         int lum = 0;
 

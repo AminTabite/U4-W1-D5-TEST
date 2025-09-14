@@ -39,7 +39,7 @@ public class Img extends ElementoMultimediale {
 
 
     @Override
-    public void Play() {
+    public void play() {
         int lum = 0;
         String titolo = this.titolo;
 
